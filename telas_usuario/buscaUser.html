@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="data:,">
+    <title>Gerenciamento de Usuários</title> 
+</head>
+<body>
+    <div class="card">
+        <nav>
+            <div class="item"><a href="../index.html">Home</a></div>
+            <a class="item" href="../Adm.html" data-tela="Adm">ADM</a>
+            <div class="item"><a href="telas_usuario/criarUser.html" data-tela="criarUser">Cadastrar Usuário - Completo</a></div>
+            <div class="item"><a href="telas_usuario/listarUsers.html" data-tela="listarUsers">Listar todos usuarios</a></div>
+            <div class="item"><a href="telas_usuario/buscaUser.html" data-tela="buscaUser">Buscar Usuário</a></div>
+            <div class="item"><a href="telas_usuario/graficoUsers.html" data-tela="graficoUsers">Gráfico Usuários</a></div>
+        </nav>
+        <h3>Buscar Usuário</h3>
+        <label for="getUserId">ID do Usuário:</label>
+        <input type="number" id="getUserId">
+        <button onclick="getUser()">Buscar</button>
+
+        <h3>Gerenciar Usuário</h3>
+        <label for="inputNome">Nome:</label>
+        <input type="text" id="inputNome">
+        <label for="email">Email:</label>
+        <input type="text" id="inputEmail">
+        <button onclick="updateUser()">Atualizar</button>
+        <button onclick="deleteUser()">Excluir</button>
+
+        <form id="form-endereco">
+            <label>Cep:
+              <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
+                     onblur="pesquisacep(this.value);" /></label><br />
+                <label>Rua:
+                <input name="endereco" type="text" id="endereco" size="42" /></label><br />
+                <label>Bairro:
+                <input name="bairro" type="text" id="bairro" size="40" /></label><br />
+                <label>Cidade:
+                <input name="cidade" type="text" id="cidade" size="39" /></label><br />
+                <label>Estado:
+                <input name="uf" type="text" id="uf" size="2" /></label><br />
+                <label>IBGE:
+                <input name="ibge" type="text" id="ibge" size="8" /></label><br />
+                <button type="button" id="submitButton" class="w3-button w3-white w3-border w3-border-blue">Criar Endereço</button>
+        </form>
+
+        <div id="message-text"></div>
+            <input name="utmx" type="text" id="utmx" size="2" />
+            <input name="utmy" type="text" id="utmy" size="2" />
+        <div id="mapid" style="width: 100%; height: 400px;"></div>
+    </div>
+
+<script src="../js/users/getUser.js"></script>
+<script src="../js/users/updateUser.js"></script>
+<script src="../js/users/deleteUser.js"></script>
+<script src="../js/users/mapa.js"></script>  
+</body>
+</html>

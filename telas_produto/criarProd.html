@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro de produtos</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="card">
+        <nav>
+            <div class="item"><a href="../index.html">Home</a></div>
+            <a class="item" href="../Adm.html" data-tela="Adm">ADM</a>
+            <div class="item"><a href="criarProd.html" data-tela="criarProd">Registar Produto</a></div>
+            <div class="item"><a href="listarProds.html" data-tela="listarProds">Listar todos produtos</a></div>
+            <div class="item"><a href="buscaProd.html" data-tela="buscaProd">Buscar Produto</a></div>
+            <div class="item"><a href="registrarVenda.html" data-tela="registrarVenda">Registar Vendas</a></div>
+            <div class="item"><a href="graficoVendas.html" data-tela="graficoVendas">Gráfico Vendas</a></div>
+        </nav>
+    <form id="prodForm">
+        <h2>Cadastro Produto</h2>
+        <label for="Nome">Nome</label><br>
+        <input type="text" id="nomeprod" name="nomeprod" required><br>
+        <label for="Preço">Preço</label><br>
+        <input type="text" id="precoprod" name="precoprod" required><br>
+        <label for="Quantidade">Quantidade</label><br>
+        <input type="text" id="qntprod" name="qntprod" required><br>
+        <button class="btnProd" type="button" id="submitButton">Registrar Produto</button>
+    </form>
+    </div>
+<script src="../js/prod/createProd.js"></script>  <!-- Supondo que sua função esteja em script.js -->
+</body>
+</html>
