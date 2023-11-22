@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Login Usuário</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 
+    <link rel="stylesheet" href="css/w3.css"> 
+    <link rel="stylesheet" href="css/styleaTime.css">
+    -->
+</head>
+<body>
+    <div class="card">
+        <nav>
+            <div class="item"><a href="index.html">Home</a></div>
+            <div class="item"><a href="sistema_login.html">Sistema Login</a></div>
+            <div class="item"><a href="registra.html">Registro</a></div>
+            <div class="item"><a href="login.html">Login</a></div>
+        </nav>
+        <form id="userForm">
+            <h2>Login</h2>
+            <label for="Email">Email</label><br>
+            <input type="text" id="email" name="email" required> <br>
+            <label for="Senha">Senha</label><br>
+            <input type="password" id="senha" name="senha" required><br>
+            <button class="btnUser" type="button" id="login">Logar</button><br>
+            <input type="checkbox" id="lembrar" > Lembrar-me
+        </form>
+    </div>
+    <!--
+      <div id="id02" class="w3-modal">
+        <div class="w3-modal-content w3-animate-zoom w3-card-4">
+          <header class="w3-container w3-teal"> 
+            <span onclick="document.getElementById('id02').style.display='none'" 
+            class="w3-button w3-display-topright">&times;</span>
+            <h4>System X</h4>
+          </header>
+          <div class="w3-container">
+            <p id="mensagem"></p>
+          </div>
+          <footer class="w3-container w3-teal">
+            <p>Modal Footer</p>
+          </footer>
+        </div>
+      </div>
+    -->
+    <script src="js/sistema_login/login.js"></script>
+</body>
+</html>
